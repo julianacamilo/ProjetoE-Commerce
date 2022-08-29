@@ -1,0 +1,56 @@
+CREATE TABLE `Site` (
+  `IdSite` intenger[ ],
+  `nome` varchar[ ],
+  `cnpj` varchar[ ],
+  `url` varchar[ ]
+);
+
+CREATE TABLE `Vendedor` (
+  `idVendedor` intenger[ ],
+  `nome` varchar[ ],
+  `contato` varchar[ ],
+  `cpf/cnpj` varchar[ ]
+);
+
+CREATE TABLE `Produto` (
+  `idProduto` intenger[ ],
+  `nome` varchar[ ],
+  `preço` decimal[ ],
+  `descrição` varchar[ ],
+  `idVendedor` intenger[ ]
+);
+
+CREATE TABLE `Cliente` (
+  `idCliente` intenger[ ],
+  `nome` varchar[ ],
+  `cpf/cnpj` varchar[ ],
+  `contato` varchar[ ],
+  `endereço` text[ ]
+);
+
+CREATE TABLE `Pagamento` (
+  `IdPag` intenger[ ],
+  `IdCliente` intenger[ ],
+  `tipoPag` varchar[ ]
+);
+
+CREATE TABLE `Pedido` (
+  `idPedido` intenger[ ],
+  `idProduto` intenger[ ],
+  `preçoProd` decimal[ ],
+  `idCliente` intenger[ ],
+  `IdPag` intenger[ ]
+);
+
+CREATE TABLE `Transportadora` (
+  `idTransp` intenger[ ],
+  `cnpj` varchar[ ],
+  `contato` varchar[ ]
+);
+
+CREATE TABLE `Rastreamento` (
+  `CodRastreio` varchar[ ],
+  `idPedido` intenger[ ],
+  `idCliente` intenger[ ],
+  `status` varchar[ ]
+);
