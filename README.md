@@ -7,7 +7,4 @@
 
 >Sistema de ompras online: é um sistema desenvolvido para mostrar os dados de compras online, desde suas entidades até seus dados.
 
-<p align="center">
-<img src=![DiagramaER 1](https://user-images.githubusercontent.com/104179960/187201553-b56f3148-aa5e-46d8-87fa-17fafd456df8.png)
-/>
-</p>
+
