@@ -1,0 +1,61 @@
+CREATE TABLE `Oficina` (
+  `IdOficina` intenger[ ],
+  `nome` varchar[ ],
+  `cnpj` varchar[ ],
+  `endereco` text[ ],
+  `contato` varchar[ ]
+);
+
+CREATE TABLE `CLiente` (
+  `IdCliente` intenger[ ],
+  `nome ` varchar[ ],
+  `cpf\cnpj` varchar[ ],
+  `contato` varchar[ ],
+  `endereco` text[ ]
+);
+
+CREATE TABLE `Mecânico` (
+  `IdMec` intenger[ ],
+  `nome` varchar[ ],
+  `cpf\cnpj` varchar[ ],
+  `contato` varchar[ ],
+  `codMec` varchar [ ],
+  `endereco` text[ ],
+  `especialidade` varchar[ ]
+);
+
+CREATE TABLE `EquipeMec` (
+  `idEquipe` intenger[ ],
+  `idMec` intenger[ ],
+  `nome` varchar[ ],
+  `IdCliente` intenger[ ],
+  `IdOs` intenger[ ],
+  `placa` varchar[ ],
+  `descricaoProb` text[ ]
+);
+
+CREATE TABLE `veiculo` (
+  `placa` varchar[ ],
+  `tipoVeic` varchar[ ],
+  `marca` varchar [ ],
+  `descricaoProb` text[ ]
+);
+
+CREATE TABLE `OS` (
+  `IdOs` intenger[ ],
+  `IdAvalia` intenger[ ],
+  `descricaoProb` text[ ],
+  `dataEntrada` date[ ],
+  `status` varchar [ ],
+  `dataSaida` date[ ],
+  `valorServ` decimal[ ]
+);
+
+CREATE TABLE `AvaliarVeic` (
+  `idAvalia` intenger[ ],
+  `idCliente` intenger[ ],
+  `idEquipe` intenger[ ],
+  `placa` varchar[ ],
+  `descricaoProb` text[ ],
+  `valorServ` decimal[ ]
+);
